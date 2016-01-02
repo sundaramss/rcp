@@ -1,0 +1,38 @@
+{
+  "name": "rcp",
+  "version": "0.0.1",
+  "description": "Simply copy the folders/files to remote system if FTP/SCP option does not available ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sundaramss/rcp.git"
+  },
+  "keywords": [
+    "Remote Copy",
+    "Remote Copy files",
+    "Remote Copy directies",
+    "socket.io",
+    "tar",
+    "ftp",
+    "scp"
+  ],
+  "author": "sundaramss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sundaramss/rcp/issues"
+  },
+  "homepage": "https://github.com/sundaramss/rcp#readme",
+  "dependencies": {
+    "command-line-args": "^2.1.0",
+    "socket.io": "^1.3.7",
+    "socket.io-client": "^1.3.7",
+    "socket.io-stream": "^0.9.0",
+    "tar-fs": "^1.8.1"
+  },
+  "bin": {
+    "rcp": "index.js"
+  }	
+}
