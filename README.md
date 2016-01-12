@@ -4,7 +4,11 @@ Remote copy of folders/files using socket.io
 
 # Aim of the Tools
 
-This tool will help you transfer the folder/files from system to system using socket.io(http), when you don't have access/restricted permission of ftp, scp 
+This tool will help you transfer the folder/files from system to system using socket.io(http), when you don't have access/restricted permission of ftp, scp(secure copy) 
+
+# Installation
+
+  npm install remotecp -g 
 
 # How to transfer?
 
@@ -31,4 +35,5 @@ $remotecp --server [--fpath <folder/file path>]
 ```
 $remotecp  --fpath <folder/file path> [--host <hostname> --port <portnumber>]
 ```
-
+# Release History
+0.0.1 Initial release
