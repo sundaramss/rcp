@@ -1,5 +1,5 @@
 {
-  "name": "rcp",
+  "name": "remotecp",
   "version": "0.0.1",
   "description": "Simply copy the folders/files to remote system if FTP/SCP option does not available ",
   "main": "index.js",
@@ -33,6 +33,6 @@
     "tar-fs": "^1.8.1"
   },
   "bin": {
-    "rcp": "index.js"
+    "remotecp": "index.js"
   }	
 }
