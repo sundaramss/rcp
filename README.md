@@ -15,6 +15,7 @@ This tool will help you transfer the folder/files from system to system using so
 This tool have behave either server or client
 
 *Server - By default 3131 port will open  and receive for folders/files*
+
 *Client - Use to upload give file/folder path.*
 
 # Commands
@@ -22,6 +23,7 @@ This tool have behave either server or client
 $remotecp
 Options
   -s, --server        Start receive file server
+  -d, --dpath string  Destination folder path
   -f, --fpath string  Upload file/folder path
   -h, --host string   default server hostname is localhost
   -p, --port number   default server port number is 3131
@@ -29,7 +31,7 @@ Options
 
 # Server 
 ```
-$remotecp --server [--fpath <folder/file path>]
+$remotecp --server [--dpath <destination folder path>]
 ```
 # Client - upload file/folder 
 ```
