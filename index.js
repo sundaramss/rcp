@@ -8,7 +8,8 @@ var cli = commandLineArgs([
   { name: 'fpath', alias: 'f', type: String, defaultOption: true, description:"Upload file/directory path" },
   { name: 'dpath', alias: 'd', type: String, description:"Destination directory path" },
   { name: 'host', alias:'h', type: String,  description:"default server hostname is localhost", defaultValue: 'localhost' },
-  { name: 'port', alias:'p', type: Number, description:"default server port number is 3131", defaultValue: '3131'}
+  { name: 'port', alias:'p', type: Number, description:"default server port number is 3131", defaultValue: '3131'},
+  { name: 'resume', alias:'r', type: Boolean, description:"resume file/folder upload.", defaultValue: false}
 ]);
 
 var options = {}
@@ -27,5 +28,5 @@ if(!(options.server || options.fpath)) {
 	fileReceiver.startServer();
 	console.log('File Receiver Ready ... ...');
 } else if (options.fpath) {
-	fileSender.sendFiles(options.host, options.port, options.fpath);
+	fileSender.sendFiles(options.host, options.port, options.fpath, {resume:options.resume});
 }

@@ -27,6 +27,7 @@ Options
   -f, --fpath string  Upload file/folder path
   -h, --host string   default server hostname is localhost
   -p, --port number   default server port number is 3131
+  -r, --resume        resume file/folder upload
 ```
 
 # Server 
@@ -37,5 +38,12 @@ $remotecp --server [--dpath <destination folder path>]
 ```
 $remotecp  --fpath <folder/file path> [--host <hostname> --port <portnumber>]
 ```
+
+If upload files not completed or socket disconnected, again you can continue the upload with few conditions
+* upload path should be same with previously mentioned.
+* In server side, uploaded folder/files are should not be deleted.
+```
+$remotecp  --resume --fpath <folder/file path> [--host <hostname> --port <portnumber>]
+```
 # Release History
-0.0.1 Initial release
+0.0.2 Initial release
